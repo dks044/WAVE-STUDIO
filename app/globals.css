@@ -5,22 +5,46 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes waveAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wave {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 200vw;
+  height: 200vw;
+  margin-left: -100vw;
+  margin-top: -196vw;
+  border-radius: 40%;
+}
+.wave.one {
+  animation: waveAnimation 10000ms infinite linear;
+  opacity: 0.5;
+  background: #0466f9;
+}
+
+.wave.two {
+  animation: waveAnimation 13500ms infinite linear;
+  opacity: 0.1;
+  background: yellow;
+}
+
+.wave.three {
+  animation: waveAnimation 11000ms infinite linear;
+  opacity: 0.1;
+  background: #e8a;
 }
