@@ -46,6 +46,6 @@ body {
 
 .wave.three {
   animation: waveAnimation 11000ms infinite linear;
-  opacity: 0.3;
+  opacity: 0.5;
   background: #0146fd;
 }
