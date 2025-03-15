@@ -31,32 +31,21 @@ body {
   margin-top: -196vw;
   border-radius: 40%;
 }
-.wave2 {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  width: 200vw;
-  height: 200vw;
-  margin-left: -100vw;
-  margin-top: -196vw;
-  border-radius: 40%;
-  /* 상하 반전 */
-}
 
 .wave.one {
   animation: waveAnimation 10000ms infinite linear;
   opacity: 0.5;
-  background: #0466f9;
+  background: #00c6ff;
 }
 
 .wave.two {
   animation: waveAnimation 13500ms infinite linear;
-  opacity: 0.1;
-  background: #0042ff;
+  opacity: 0.3;
+  background: #0146fd;
 }
 
 .wave.three {
   animation: waveAnimation 11000ms infinite linear;
-  opacity: 0.1;
-  background: #e8a;
+  opacity: 0.3;
+  background: #0146fd;
 }
